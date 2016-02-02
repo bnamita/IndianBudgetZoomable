@@ -1,0 +1,26 @@
+body { margin: 0; background: #ddd; overflow:hidden}
+#wrapper { width: 940px; height: 1000px; margin: 0 auto; position: relative; background: white; }
+
+#info {
+    position: fixed;
+    top: 10px;
+    width: 900px;
+    /*background: white;*/
+    padding: 20px;
+    opacity: 0;
+    color: slategray;
+    z-index: 100;
+    font-size: 20px;
+}
+
+#info #name { font-size: 24px; }
+#info #segment { font-size: 24px; margin-left: 10px; letter-spacing: 1px; font-weight: bolder;}
+#info #percent { font-size: 24px; margin-left: 10px; font-weight: bolder;}
+
+#credits { position: absolute; bottom: 10px; left: 10px; font-size: 10px; }
+
+path { stroke: #fff; fill-rule: evenodd; }
+text { font-size: 12px; pointer-events: none; fill: white; }
+svg { margin: 50px 0 0 35px; }
+.highlighted-path { fill: #445!important; opacity: 1!important; }
+.hidden { visibility: hidden; }

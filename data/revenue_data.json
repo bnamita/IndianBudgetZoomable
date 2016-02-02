@@ -1,0 +1,147 @@
+{
+    "name": "Total Revenue",
+    "size": 1777477,
+    "children": [
+
+                {
+                    "name": "Tax Revenue",
+                    "size": 919842,
+                    "children": [
+                        {
+                            "name": "Corporation Tax",
+                            "size": 470628,
+                            "children": [
+                                {"name": "Collections", "size": 415382},
+                                {"name": "Surcharge", "size": 41538},
+                                {"name": "Education Cess", "size": 13708}
+                            ]
+                        },
+
+                        {
+                            "name": "Income Tax",
+                             "size": 327367,
+                             "children": [
+                                 {"name": "Collections", "size": 303991},
+                                 {"name": "Surcharge", "size": 7500},
+                                 {"name": "Education Cess", "size": 9345},
+                                 {"name": "Security Transaction Tax", "size": 6531}
+                             ]
+
+                        },
+                        {
+                            "name": "Wealth Tax",
+                            "size": 0
+
+                        },
+                        {
+                            "name": "Customs",
+                            "size": 208336,
+                            "children": [
+                                 {
+                                    "name": "Import Duties",
+                                    "size": 201397,
+                                    "children": [
+                                         {"name": "Basic Duties", "size": 60000},
+                                         {"name": "Additional Duty of Customs (CVD)", "size": 101921},
+                                         {"name": "Special CV Duty", "size": 32400},
+                                         {"name": "National Calamity Contingent Duty", "size": 1640},
+                                         {"name": "Education Cess", "size": 3624},
+                                         {"name": "Secondary & Higher Education Cess", "size": 1812}
+
+                                     ]
+                                 },
+                                 {"name": "Export Duty", "size": 1050},
+                                 {"name": "Cesses on Exports", "size": 44},
+                                 {"name": "Other Receipts", "size": 5845}
+                             ]
+                        },
+                        {
+                            "name": "Union Excise Duties",
+                            "size": 229808,
+                            "children": [
+                                 {
+                                    "name": "Basic & Special Excise Duties excluding Cess on Motor Spirit & High Speed Diesel Oil",
+                                    "size": 128087
+                                 },
+                                 {"name": "Addtional Duty of Excise on Motor Spirit", "size": 10500},
+                                 {"name": "Addtional Duty of Excise on High Speed Diesel Oil", "size": 32600},
+                                 {"name": "National Calamity Contingent Duty", "size": 4050},
+                                 {"name": "Special Addtional Duty of Excise on Motor Spirit", "size": 15600},
+                                 {"name": "Surcharge on Pan Masala and Tobacco Products", "size": 1060},
+                                 {
+                                     "name": "Cesses administered by Department of Revenue",
+                                     "size": 36260,
+                                     "children": [
+                                          {"name": "Others", "size": 23141.96},
+                                          {"name": "Clean Energy Cess", "size": 13118.04}
+                                      ]
+                                  },
+                                  {"name": "Cesses administered by Other Departments", "size": 1651.54}
+
+
+
+
+                             ]
+                        },
+                        {
+                                "name": "Service Tax",
+                                "size": 209774.00,
+                                "children": [
+
+                                     {"name": "Collections", "size": 208856.00},
+                                     {"name": "Education Cess", "size": 612.00},
+                                     {"name": "Secondary & Higher Education Cess", "size": 306.00}
+                                 ]
+                        },
+                        {
+                            "name": "Taxes of Union Territories",
+                            "size": 3577.02,
+                            "children": [
+
+                                 {"name": "Sales Tax", "size": 2605.00},
+                                 {"name": "Others", "size": 972.02}
+                             ]
+                        }
+
+                    ]
+
+                },
+                {
+                    "name": "Non-Tax Revenue",
+                    "size":221733,
+                    "children": [
+                        {"name": "Interest Receipts", "size": 23600},
+                        {"name": "Dividend & Profits", "size": 100651},
+                        {"name": "External Grants", "size": 1774},
+                        {"name": "Other", "size": 94413},
+                        {"name": "Receipts of UTs", "size": 1296}
+                    ]
+                },
+                
+
+
+
+        {
+            "name": "Capital Receipts",
+            "size":623861,
+            "children": [
+                {"name": "Non-Debt",
+                    "children":[
+                        {"name": "Loan Recoveries", "size": 10753},
+                        {"name": "Misc.", "size": 69500}
+
+                    ],
+                    "size": 80253},
+                {"name": "Debt",
+                    "children":[
+                        {"name": "Market Loans", "size": 456405},
+                        {"name": "Short Term Borrowings", "size": 30063},
+                        {"name": "Others", "size": 57140}
+
+                    ],
+                    "size": 543608}
+            ]
+        }
+
+    ]
+}
