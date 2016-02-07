@@ -28,6 +28,13 @@ var labelFits = function(d) {
     return x(d.x + d.dx) - x(d.x) > 0.05;
 };
 
+var tooltip = d3.select("#info")
+    //.append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("opacity", 0);
+
 var totalSize = 0;
 
 d3.json("data/revenue_data.json", function(error, root) {
@@ -36,14 +43,35 @@ d3.json("data/revenue_data.json", function(error, root) {
     var path = vis.selectAll("path").data(nodes);
 
 
+
     path.enter().append("path")
         .attr("id", function(d, i) { return "path-" + i; })
         .attr("d", arc)
         .attr("fill-rule", "evenodd")
+        .style("opacity", 0.85)
         .style("fill", function(d) { return colors(d); })
-        .on("click", function(d) { return d.depth < 4 ? click(d) : click(d.parent) })
         .on("mouseover", mouseOver)
-        .on("mouseout", mouseOut);
+        .on("click", function(d){
+            return d.depth < 4 ? click(d) : click(d.parent)
+        })
+        //.on("mouseover", mouseOver)
+        //.on("mouseout", mouseOut);
+        //.on("mouseover", function(d) {
+        //    tooltip.html(function() {
+        //        var name = format_name(d);
+        //        return name;
+        //    });
+        //    return tooltip.transition()
+        //        .duration(50)
+        //        .style("opacity", 0.9);
+        //})
+        .on("mousemove", function(d) {
+            return tooltip
+                .style("top", (d3.event.pageY-10)+"px")
+                .style("left", (d3.event.pageX-230)+"px");
+        })
+        .on("mouseout", function(){return tooltip.style("opacity", 0);});
+
 
     totalSize = path.node().__data__.value;
 
@@ -66,7 +94,7 @@ d3.json("data/revenue_data.json", function(error, root) {
         .text(function(d) {
             // Truncate text where necessary for neatness
             var firstLine =  d.name.split(" ")[0];
-            if (d.depth && firstLine.length > 13) {
+            if (d.depth && firstLine.length > 30) {
                 return firstLine.substring(0,8) + "…"
             } else if (d.depth) {
                 return firstLine;
@@ -84,6 +112,7 @@ d3.json("data/revenue_data.json", function(error, root) {
         .attr("cy",435)
         .attr("r",19)
         .attr("fill","#333")
+        .style("opacity",-0.15)
         .attr("pointer-events","none");
     d3.select("svg")
         .append("text")
@@ -126,11 +155,20 @@ d3.json("data/revenue_data.json", function(error, root) {
             .each("end", function(e) {
                 d3.select(this).style("visibility", isParentOf(d, e) ? null : "hidden");
             });
+        if (d.depth == 0) {
+            d3.select("#splash").style("display","block").transition().duration(750).delay(500).style("opacity",1);
+            d3.select("#centre-label").text("Total Revenue")
+                .style("font-family","Guardian-Text-Egyp-Web-Reg-Latin").style("font-size","12px");
+        } else {
+            d3.select("#splash").transition().duration(750).style("opacity",0).each("end", function() {
+                d3.select(this).style("display","none");
+            });
+            d3.select("#centre-label").attr("class","icon-zoom-out").text("\uF011").style("font-family","FontAwesome").style("font-size","18px");
+            d3.select("#centre-label-background").transition().delay(750).style("fill",colors(d.parent))
 
-            if (d.depth == 3) {
-                var amount = Math.round(d.value * 100)/100,
-                    percent = Math.round(100 * 100 * amount / 1450.33)/100
-            }
+        }
+
+
     }
 });
 
@@ -162,8 +200,8 @@ function displayDetails(d) {
             break;
 
     }
-    d3.select("#name").text(nameText);
-    d3.select("#segment").text(d.name).style("color", colors(d));;
+   // d3.select("#name").text(nameText);
+    d3.select("#segment").text(d.name)//.style("color", colors(d));;
     var amount = Math.round(d.value * 100)/100;
         //percent = Math.round(100 * 100 * amount / 1450.33)/100;
     var percentage = (100 * d.value / totalSize).toPrecision(3);
@@ -172,7 +210,7 @@ function displayDetails(d) {
         percentageString = "< 0.1%";
     }
     d3.select("#amount").text(d.value != 0 ? amount + " crores" : " ");
-    d3.select("#percent").text(d.value != 0 ? "( " + percentage + "% )" : " ").style("color", colors(d));
+    d3.select("#percent").text(d.value != 0 ? "( " + percentage + "% " : " ")//.style("color", colors(d));
 }
 
 function mouseOut(d) {

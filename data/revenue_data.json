@@ -6,6 +6,7 @@
                 {
                     "name": "Tax Revenue",
                     "size": 919842,
+                    "desc" : "jdqwJFwljdewfj",
                     "children": [
                         {
                             "name": "Corporation Tax",
@@ -39,16 +40,8 @@
                             "children": [
                                  {
                                     "name": "Import Duties",
-                                    "size": 201397,
-                                    "children": [
-                                         {"name": "Basic Duties", "size": 60000},
-                                         {"name": "Additional Duty of Customs (CVD)", "size": 101921},
-                                         {"name": "Special CV Duty", "size": 32400},
-                                         {"name": "National Calamity Contingent Duty", "size": 1640},
-                                         {"name": "Education Cess", "size": 3624},
-                                         {"name": "Secondary & Higher Education Cess", "size": 1812}
+                                    "size": 201397
 
-                                     ]
                                  },
                                  {"name": "Export Duty", "size": 1050},
                                  {"name": "Cesses on Exports", "size": 44},
@@ -70,11 +63,7 @@
                                  {"name": "Surcharge on Pan Masala and Tobacco Products", "size": 1060},
                                  {
                                      "name": "Cesses administered by Department of Revenue",
-                                     "size": 36260,
-                                     "children": [
-                                          {"name": "Others", "size": 23141.96},
-                                          {"name": "Clean Energy Cess", "size": 13118.04}
-                                      ]
+                                     "size": 36260
                                   },
                                   {"name": "Cesses administered by Other Departments", "size": 1651.54}
 
@@ -117,7 +106,7 @@
                         {"name": "Receipts of UTs", "size": 1296}
                     ]
                 },
-                
+
 
 
 
