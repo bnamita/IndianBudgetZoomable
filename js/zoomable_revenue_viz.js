@@ -70,7 +70,11 @@ d3.json("data/revenue_data.json", function(error, root) {
                 .style("top", (d3.event.pageY-10)+"px")
                 .style("left", (d3.event.pageX-230)+"px");
         })
-        .on("mouseout", function(){return tooltip.style("opacity", 0);});
+        .on("mouseout", function(){
+            mouseOut(d);
+            d3.select("#info").style('opacity',0);
+            return tooltip.style("opacity", 0);
+        });
 
 
     totalSize = path.node().__data__.value;
