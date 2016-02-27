@@ -6,26 +6,25 @@
                 {
                     "name": "Tax Revenue",
                     "size": 919842,
-                    "desc" : "jdqwJFwljdewfj",
                     "children": [
                         {
                             "name": "Corporation Tax",
-                            "size": 470628,
+                            "size": 298659,
                             "children": [
-                                {"name": "Collections", "size": 415382},
-                                {"name": "Surcharge", "size": 41538},
-                                {"name": "Education Cess", "size": 13708}
+                                {"name": "Collections", "size": 263600},
+                                {"name": "Surcharge", "size": 26360},
+                                {"name": "Education Cess", "size": 8699}
                             ]
                         },
 
                         {
                             "name": "Income Tax",
-                             "size": 327367,
+                             "size": 207746,
                              "children": [
-                                 {"name": "Collections", "size": 303991},
-                                 {"name": "Surcharge", "size": 7500},
-                                 {"name": "Education Cess", "size": 9345},
-                                 {"name": "Security Transaction Tax", "size": 6531}
+                                 {"name": "Collections", "size": 192912},
+                                 {"name": "Surcharge", "size": 4759},
+                                 {"name": "Education Cess", "size": 5930},
+                                 {"name": "Security Transaction Tax", "size": 4145}
                              ]
 
                         },
@@ -36,36 +35,36 @@
                         },
                         {
                             "name": "Customs",
-                            "size": 208336,
+                            "size": 132209,
                             "children": [
                                  {
                                     "name": "Import Duties",
-                                    "size": 201397
+                                    "size": 127806
 
                                  },
-                                 {"name": "Export Duty", "size": 1050},
-                                 {"name": "Cesses on Exports", "size": 44},
-                                 {"name": "Other Receipts", "size": 5845}
+                                 {"name": "Export Duty", "size": 666},
+                                 {"name": "Cesses on Exports", "size": 28},
+                                 {"name": "Other Receipts", "size": 3709}
                              ]
                         },
                         {
                             "name": "Union Excise Duties",
-                            "size": 229808,
+                            "size": 145836,
                             "children": [
                                  {
                                     "name": "Basic & Special Excise Duties excluding Cess on Motor Spirit & High Speed Diesel Oil",
-                                    "size": 128087
+                                    "size": 81283
                                  },
-                                 {"name": "Addtional Duty of Excise on Motor Spirit", "size": 10500},
-                                 {"name": "Addtional Duty of Excise on High Speed Diesel Oil", "size": 32600},
-                                 {"name": "National Calamity Contingent Duty", "size": 4050},
-                                 {"name": "Special Addtional Duty of Excise on Motor Spirit", "size": 15600},
-                                 {"name": "Surcharge on Pan Masala and Tobacco Products", "size": 1060},
+                                 {"name": "Addtional Duty of Excise on Motor Spirit", "size": 6663},
+                                 {"name": "Addtional Duty of Excise on High Speed Diesel Oil", "size": 20688},
+                                 {"name": "National Calamity Contingent Duty", "size": 2570},
+                                 {"name": "Special Addtional Duty of Excise on Motor Spirit", "size": 9900},
+                                 {"name": "Surcharge on Pan Masala and Tobacco Products", "size": 674},
                                  {
                                      "name": "Cesses administered by Department of Revenue",
-                                     "size": 36260
+                                     "size": 23010
                                   },
-                                  {"name": "Cesses administered by Other Departments", "size": 1651.54}
+                                  {"name": "Cesses administered by Other Departments", "size": 1048}
 
 
 
@@ -74,21 +73,21 @@
                         },
                         {
                                 "name": "Service Tax",
-                                "size": 209774.00,
+                                "size": 133122,
                                 "children": [
 
-                                     {"name": "Collections", "size": 208856.00},
-                                     {"name": "Education Cess", "size": 612.00},
-                                     {"name": "Secondary & Higher Education Cess", "size": 306.00}
+                                     {"name": "Collections", "size": 132539},
+                                     {"name": "Education Cess", "size": 388},
+                                     {"name": "Secondary & Higher Education Cess", "size": 195}
                                  ]
                         },
                         {
                             "name": "Taxes of Union Territories",
-                            "size": 3577.02,
+                            "size": 2270,
                             "children": [
 
-                                 {"name": "Sales Tax", "size": 2605.00},
-                                 {"name": "Others", "size": 972.02}
+                                 {"name": "Sales Tax", "size": 1653},
+                                 {"name": "Others", "size": 617}
                              ]
                         }
 
