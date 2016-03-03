@@ -97,8 +97,7 @@
                     "children": [
                         {"name": "Interest Receipts", "size": 29620},
                         {"name": "Dividend & Profits", "size": 123780},
-                        {"name": "External Grants", "size": 2862},
-                        {"name": "Other", "size": 165320},
+                        {"name": "Other", "size": 168181},
                         {"name": "Receipts of UTs", "size": 1339}
                     ]
                 },
@@ -121,7 +120,7 @@
                     "children":[
                         {"name": "Market Loans", "size": 425181},
                         {"name": "Short Term Borrowings", "size": 16649},
-                        {"name": "Others", "size": 19720}
+                        {"name": "Others", "size": 78879}
 
                     ],
                     "size": 520709}
