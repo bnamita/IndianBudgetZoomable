@@ -163,7 +163,8 @@ ZoomableRevenueViz.prototype = {
                     d3.select("#splash").transition().duration(750).style("opacity",0).each("end", function() {
                         d3.select(this).style("display","none");
                     });
-                    d3.select("#centre-label").attr("class","icon-zoom-out").text("\uF011").style("font-family","FontAwesome").style("font-size","18px");
+                    //d3.select("#centre-label").attr("class","icon-zoom-out").text("\uF010").style("font-family","FontAwesome").style("font-size","18px");
+                    d3.select("#centre-label").text("\uF010").style("font-family","FontAwesome").style("font-size","18px");
                     d3.select("#centre-label-background").transition().delay(750).style("fill",self.colors(d.parent))
 
                 }
